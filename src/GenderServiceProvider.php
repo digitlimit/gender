@@ -56,10 +56,18 @@ class GenderServiceProvider extends ServiceProvider
      */
     protected function bootForConsole(): void
     {
-        // Publishing the configuration file.
         $this->publishes([
+            __DIR__.'/../migrations' => database_path('migrations'),
+        ], 'gender.migrations');
+
+        $this->publishes([
+            __DIR__.'/../seeders' => database_path('seeders'),
+        ], 'gender.seeders');
+
+        // Publishing the configuration file.
+        /*$this->publishes([
             __DIR__.'/../config/gender.php' => config_path('gender.php'),
-        ], 'gender.config');
+        ], 'gender.config');*/
 
         // Publishing the views.
         /*$this->publishes([
