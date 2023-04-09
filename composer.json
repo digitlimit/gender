@@ -1,0 +1,41 @@
+{
+    "name": "digitlimit/gender",
+    "description": "Laravel genders migration, PHP array lists, MYSQL gender SQL dump",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Emeka Mbah",
+            "email": "frankemeks77@yahoo.com",
+            "homepage": "https://emekambah.medium.com"
+        }
+    ],
+    "homepage": "https://github.com/digitlimit/gender",
+    "keywords": ["Laravel", "Gender"],
+    "require": {
+        "illuminate/support": "~9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Digitlimit\\Gender\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Digitlimit\\Gender\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Digitlimit\\Gender\\GenderServiceProvider"
+            ],
+            "aliases": {
+                "Gender": "Digitlimit\\Gender\\Facades\\Gender"
+            }
+        }
+    }
+}
