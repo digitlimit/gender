@@ -7,6 +7,13 @@ There are 3 formats at moment.
 - PHP array file located in files/genders.php
 - JSON array file located in files/genders.json
 
+# Laravel publishables
+To publish the gender migration and seeder
+
+```
+php artisan vendor:publish --provider="Digitlimit\Gender\GenderServiceProvider"
+```
+
 # Genders
 - Abinary
 - Agender
@@ -115,14 +122,3 @@ There are 3 formats at moment.
 - Woman of trans experience
 - X-gender
 - Xenogender
-
-
-
-
-
-
-
-
-
-
-
