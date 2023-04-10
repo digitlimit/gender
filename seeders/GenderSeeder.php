@@ -120,7 +120,6 @@ class GenderSeeder extends Seeder
         ["name" => "Woman of trans experience"],
         ["name" => "X-gender"],
         ["name" => "Xenogender"]
-        
         ]);
     }
 }
