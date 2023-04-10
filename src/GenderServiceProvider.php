@@ -31,8 +31,6 @@ class GenderServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/gender.php', 'gender');
-
         // Register the service the package provides.
         $this->app->singleton('gender', function ($app) {
             return new Gender;
