@@ -10,7 +10,7 @@
         }
     ],
     "homepage": "https://github.com/digitlimit/gender",
-    "keywords": ["Laravel", "Gender"],
+    "keywords": ["laravel", "gender"],
     "require-dev": {
         "phpunit/phpunit": "^10.0",
         "orchestra/testbench": "^8.3",
