@@ -13,12 +13,6 @@ class GenderServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'digitlimit');
-        // $this->loadViewsFrom(__DIR__.'/../resources/views', 'digitlimit');
-        // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-        // $this->loadRoutesFrom(__DIR__.'/routes.php');
-
-        // Publishing is only necessary when using the CLI.
         if ($this->app->runningInConsole()) {
             $this->bootForConsole();
         }
@@ -31,7 +25,6 @@ class GenderServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        // Register the service the package provides.
         $this->app->singleton('gender', function ($app) {
             return new Gender;
         });
@@ -61,28 +54,5 @@ class GenderServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../seeders' => database_path('seeders'),
         ], 'gender.seeders');
-
-        // Publishing the configuration file.
-        /*$this->publishes([
-            __DIR__.'/../config/gender.php' => config_path('gender.php'),
-        ], 'gender.config');*/
-
-        // Publishing the views.
-        /*$this->publishes([
-            __DIR__.'/../resources/views' => base_path('resources/views/vendor/digitlimit'),
-        ], 'gender.views');*/
-
-        // Publishing assets.
-        /*$this->publishes([
-            __DIR__.'/../resources/assets' => public_path('vendor/digitlimit'),
-        ], 'gender.views');*/
-
-        // Publishing the translation files.
-        /*$this->publishes([
-            __DIR__.'/../resources/lang' => resource_path('lang/vendor/digitlimit'),
-        ], 'gender.views');*/
-
-        // Registering package commands.
-        // $this->commands([]);
     }
 }
