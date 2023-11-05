@@ -10,7 +10,6 @@ class TestCase extends BaseTestCase
     public function setUp(): void
     {
         parent::setUp();
-        // additional setup
     }
   
     protected function getPackageProviders($app)
@@ -18,11 +17,6 @@ class TestCase extends BaseTestCase
         return [
             GenderServiceProvider::class,
         ];
-    }
-  
-    protected function getEnvironmentSetUp($app)
-    {
-        // perform environment setup
     }
 
     public function packagePath(string $path='')
