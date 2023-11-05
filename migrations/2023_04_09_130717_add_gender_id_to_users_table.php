@@ -12,7 +12,6 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('users', function (Blueprint $table) {
-            // nullable to avoid breaking changes in existing app
             $table->integer('gender_id')->nullable();
         });
     }
