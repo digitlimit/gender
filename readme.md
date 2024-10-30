@@ -11,7 +11,7 @@ There are 3 formats at moment.
 To publish the gender migration and seeder
 
 ```
-php artisan vendor:publish --provider="Digitlimit\Gender\GenderServiceProvider"
+php artisan vendor:publish
 ```
 
 # Genders
@@ -123,12 +123,12 @@ php artisan vendor:publish --provider="Digitlimit\Gender\GenderServiceProvider"
 - X-gender
 - Xenogender
 
-To run the migrate
+#To run the migrate
 ```
 php artisan migrate
 ```
 
-To seed
+#To run seeder
 ```
-php artisan db:seed
+php artisan db:seed --class=GenderSeeder
 ```
