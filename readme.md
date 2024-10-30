@@ -122,3 +122,13 @@ php artisan vendor:publish --provider="Digitlimit\Gender\GenderServiceProvider"
 - Woman of trans experience
 - X-gender
 - Xenogender
+
+To run the migrate
+```
+php artisan migrate
+```
+
+To seed
+```
+php artisan db:seed
+```
