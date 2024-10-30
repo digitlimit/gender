@@ -123,12 +123,12 @@ php artisan vendor:publish
 - X-gender
 - Xenogender
 
-#To run the migrate
+# To run the migrate
 ```
 php artisan migrate
 ```
 
-#To run seeder
+# To run seeder
 ```
 php artisan db:seed --class=GenderSeeder
 ```
